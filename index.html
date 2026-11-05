@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EsToDoList</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f5f3ed] min-h-screen text-[#393d35]">
+
+  <header class="px-5 py-6 sm:px-10 border-b border-[#e5e1d7]">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="text-2xl font-bold">EsToDoList</h1>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-5 py-10 sm:px-10">
+
+    <div class="mb-7">
+      <p class="text-sm text-[#79846d] mb-2">
+        MINHAS ATIVIDADES
+      </p>
+      <h2 class="text-2xl sm:text-3xl font-semibold">
+        Adicionar tarefa
+      </h2>
+    </div>
+
+    <section class="bg-[#fffefa] rounded-2xl border
+        border-[#e8e4da] p-5 sm:p-8">
+
+      <form class="flex flex-col gap-6">
+
+        <div>
+          <label class="block text-sm font-medium mb-2">
+            Tarefa
+          </label>
+
+          <input type="text" placeholder="O que você precisa fazer?" class="w-full bg-[#f8f7f2] border border-[#e5e1d7]
+                        rounded-lg px-4 py-3 outline-none
+                        focus:border-[#849276]">
+        </div>
+
+        <!-- Descrição -->
+        <div>
+          <label class="block text-sm font-medium mb-2">
+            Descrição
+          </label>
+
+          <textarea rows="3" placeholder="Adicione alguns detalhes..." class="w-full bg-[#f8f7f2] border border-[#e5e1d7]
+                        rounded-lg px-4 py-3 outline-none resize-none
+                        focus:border-[#849276]"></textarea>
+        </div>
+
+        <!-- Categoria -->
+        <div>
+          <label class="block text-sm font-medium mb-2">
+            Categoria
+          </label>
+
+          <select class="w-full bg-[#f8f7f2] border border-[#e5e1d7]
+                        rounded-lg px-4 py-3 outline-none">
+
+            <option>Estudos</option>
+            <option>Trabalho</option>
+            <option>Pessoal</option>
+            <option>Outros</option>
+
+          </select>
+        </div>
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+          <div>
+            <label class="block text-sm font-medium mb-2">
+              Data
+            </label>
+
+            <input type="date" class="w-full bg-[#f8f7f2] border
+                            border-[#e5e1d7] rounded-lg px-4 py-3">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">
+              Status
+            </label>
+
+            <label class="flex items-center gap-3
+                        bg-[#f8f7f2] border border-[#e5e1d7]
+                        rounded-lg px-4 py-3">
+
+              <input type="checkbox" class="accent-[#849276] w-4 h-4">
+
+              <span class="text-sm">
+                Concluída
+              </span>
+
+            </label>
+          </div>
+
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-3">
+            Prioridade
+          </label>
+
+          <div class="flex flex-wrap gap-6 text-sm">
+
+            <label class="flex items-center gap-2">
+              <input type="radio" name="prioridade" class="accent-[#849276]">
+              Baixa
+            </label>
+
+            <label class="flex items-center gap-2">
+              <input type="radio" name="prioridade" class="accent-[#b99b54]">
+              Média
+            </label>
+
+            <label class="flex items-center gap-2">
+              <input type="radio" name="prioridade" class="accent-[#bd786b]">
+              Alta
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Botões -->
+        <div class="flex flex-col-reverse sm:flex-row
+                sm:justify-between gap-3 pt-5 border-t
+                border-[#e8e4da]">
+
+          <button type="reset" class="bg-[#f3e5e1] text-[#a45e53]
+                        rounded-lg px-7 py-3 hover:bg-[#edd8d2]">
+
+            Cancelar
+
+          </button>
+
+          <button type="submit" class="bg-[#849276] text-white
+                        rounded-lg px-8 py-3 hover:bg-[#718265]">
+
+            Salvar tarefa
+
+          </button>
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
